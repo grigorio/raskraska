@@ -13,10 +13,21 @@ public class toolControl : MonoBehaviour {
 	void Update () {
 		
 	}
+
     private void OnMouseDown()
     {
-        paintGM.toolTipe = "eraser";
-        Debug.Log("Eraser enabled");
-
+        if (gameObject.name == "icon eraser")
+        {
+            paintGM.toolType = "eraser";
+        }
+        if (gameObject.name == "icon pencil")
+        {
+            paintGM.toolType = "pencil";
+        }
+        if (gameObject.name == "sizeUp")
+        {
+            paintGM.currentScale += .05f;
+        }
+        //Debug.Log("eraser selected");
     }
 }

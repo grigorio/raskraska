@@ -2,10 +2,13 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class paintGM : MonoBehaviour {
+public class paintGM: MonoBehaviour {
     public Transform baseDot;
     public KeyCode mouseLeft;
-    public static string toolTipe;
+    public static string toolType;
+    public static Color currentColor;
+    public static int currentOrder;
+    public static float currentScale=.1f;
 
 	// Use this for initialization
 	void Start () {
@@ -19,7 +22,9 @@ public class paintGM : MonoBehaviour {
 
         if (Input.GetKey(mouseLeft))
         {
+
             Instantiate(baseDot, objPosition, baseDot.rotation);
         }
+
     }
 }

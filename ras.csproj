@@ -87,6 +87,7 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\colorpicker.cs" />
     <Compile Include="Assets\dotControl.cs" />
     <Compile Include="Assets\paintGM.cs" />
     <Compile Include="Assets\toolControl.cs" />
